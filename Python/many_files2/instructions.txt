@@ -1,0 +1,53 @@
+[NOTE: SOLUTION INCOMPLETE OR MISSING!]
+[Moderatly advanced level!]
+In this exercise we will be
+practicing more advanced 
+operations like hashing and
+useful libraries! 
+
+your task 
+is to once again recursively
+traverse all files and
+directories in the 'files'
+directory but this time
+add all sub directories as a
+dictionary to a dictionary 
+and all files with their
+corresponding sha256sum!
+like so:
+{
+    "directory0":{
+        "directory0":{
+            "directory0":{
+                "6f3g4f":"4389fe3ccac41e09012eadb30e8d7e1b685a9ffa0ea12ff43cb0e803b95384ac"
+                "egbc":"ea73671e697d750511fc00b7d532fc89aba7c495d2c6bfee1ac2059c3fdfd71a"
+            }
+            .
+            .
+            .
+        }
+        .
+        .
+        .
+    }
+    .
+    .
+    .
+}
+
+then once you have created the
+dictionary i want you to use the
+json library to create a json file!
+start by reading in the online
+documentation how to use the 
+json.dump() method!
+
+once that is done i want you to
+read the file as binary and hash
+that value, all going well you may
+arrive at the same value as me,
+but there is a large chance you wont
+even if you did everything right due
+to the inherent randomness of 
+dictionaries
+

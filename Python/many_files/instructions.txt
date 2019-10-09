@@ -17,6 +17,15 @@ carefully becasue one small misstep
 will throw off your calculation 
 colpletely!
 
+You will be working in the 'env'
+directory and once you are done
+and your answer matches the one
+provided at the bottom of the file
+you can look at my solution in the
+'solution' directory. If you get
+stuck it should be your LAST RESORT
+to look at my solution.
+
 troubleshooting:
 if there are no directories in 
 env/files you can copy a hierarchy
