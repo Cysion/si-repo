@@ -1,0 +1,28 @@
+In this exercise i want you to use
+recursion to find all the files in
+every sub-directory of the 'files'
+directory and then read them. Every
+file will contain a number. i want 
+you to:
+ 1. sum all the numbers in files
+    that start with a letter.
+ 2. subtract from that sum all 
+    the numbers in files that 
+    start with an odd number.
+ 3. multiply the difference with
+    the number of files that start
+    with an even number!
+in that specific order! read it
+carefully becasue one small misstep
+will throw off your calculation 
+colpletely!
+
+troubleshooting:
+if there are no directories in 
+env/files you can copy a hierarchy
+from solution/files. if that too is
+empty, run the tool: env_maker.py
+and it will generate all the needed
+directories in solution/files
+
+your answer should be: 268962981463008
