@@ -1,8 +1,16 @@
 {
     "recursion":[
-        "many_files"
+        "many_files",
+        "many_files2"
     ],
     "file management":[
-        "many_files"
+        "many_files",
+        "many_files2"
+    ],
+    "libraries":[
+        "many_files2"
+    ],
+    "hashing":[
+        "many_files2"
     ]
 }
