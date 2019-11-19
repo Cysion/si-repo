@@ -1,0 +1,96 @@
+#include "bintree.hpp"
+
+Node::Node(){
+    left_child = nullptr;
+    right_child = nullptr;
+    value = 0;
+}
+
+Node::Node(int data){
+    left_child = nullptr;
+    right_child = nullptr;
+    value = data;
+}
+
+Bintree::Bintree(){
+    root = nullptr;
+}
+
+void Bintree::insert(int data, Node* where){
+    if(where->value == data){
+        return;
+    }
+    else if(where->value > data){
+        if(where->left_child == nullptr){
+            where->left_child = new Node(data);
+        }
+        else if(where->left_child->value >= data){
+            insert(data, where->left_child);
+        }
+        else{
+            Node* hold = new Node(data);
+            hold->left_child = where->left_child;
+            where->left_child = hold;
+        }
+    }
+    else{
+        if(where->right_child == nullptr){
+            where->right_child = new Node(data);
+        }
+        else if(where->right_child->value <= data){
+            insert(data, where->right_child);
+        }
+        else{
+            Node* hold = new Node(data);
+            hold->right_child = where->right_child;
+            where->right_child = hold;
+        }
+
+    }
+}
+
+void Bintree::remove(int data, Node* where){
+
+} 
+
+void Bintree::insert(int data){
+    if(root == nullptr){
+        root = new Node(data);
+    }
+    else{
+        insert(data, root);
+    }
+
+}
+
+void Bintree::get_ordered_list(std::vector<int>& inlist){
+    if(root != nullptr){
+        get_ordered_list(inlist, root);
+    }
+    else{
+        inlist.push_back(-1);
+    }
+}
+
+
+void Bintree::get_ordered_list(std::vector<int>& inlist, Node* where){
+    if(where->left_child == nullptr){
+        inlist.push_back(where->value);
+        return;
+    }
+    else{
+        get_ordered_list(inlist, where->left_child);
+    }
+    inlist.push_back(where->value);
+    if(where->right_child == nullptr){
+        return;
+    }
+    else{
+        get_ordered_list(inlist, where->right_child);
+    }
+
+}
+
+void Bintree::remove(int data){
+
+}
