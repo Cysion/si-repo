@@ -36,7 +36,11 @@ class Fight:
         self.apply_statuses()
         self.turn += 1
         for combatant in self.combatants:
+            for cd in self.combatants[combatant].cooldowns:
+                if self.combatants[combatant].cooldowns[cd]:
+                    self.combatants[combatant].cooldowns[cd] -= 1
             print(combatant, " has ", self.combatants[combatant].health, " hp")
+        
         
 
     def villain_turn(self):
