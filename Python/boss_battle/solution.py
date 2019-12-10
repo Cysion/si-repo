@@ -22,7 +22,7 @@ def main():
             try:
                 action = input("Enter name of action to take! ")
                 target = input("To whom? ")
-                print("\n")
+                print("")
                 fight.take_turn("hero", action, target)
                 done_action = True
             except KeyError:
