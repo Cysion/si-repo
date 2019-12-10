@@ -1,0 +1,19 @@
+{
+    "name":"silent protagonist",
+    "taunts":[
+        "The light will prevail!",
+        "Justice is my religion!",
+        "Shut your snout, you ugly trout!",
+        "I need to destroy you for a quest!",
+        "Even if you win I will just reload!",
+        "Stop right there criminal scum, you violated the law!"
+    ],
+    "health":100,
+    "skills":{
+        "sword strike":[10,0,0,0],
+        "boomerang throw":[7,7,1,2],
+        "bomb throw":[0,15,2,4],
+        "shield bash":[5,0,0,1],
+        "red potion":[-50,-10,2,7]
+    }
+}

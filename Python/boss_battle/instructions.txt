@@ -1,0 +1,21 @@
+Your job is to take input from a user and handle 
+any bad inputs gracefully with try-except. You are 
+given a starting point with some code to run the
+combat. You will interact with the "fight" object
+as an interface to a "character" object, but not
+the character object directly. you will use the
+method "take_turn" in the "fight" object for this
+interaction. fight.take_turn() takes 3 arguments:
+
+    who is doing something (in your case "hero")
+    what are they doing (ex "boomerang throw")
+    who are they doing it to (ex "villain")
+
+You will take user input and handle any exceptions
+that occur inside one or several try-except statements.
+you will also handle most of the user interfaceand 
+show them adequate information.
+things to consider:
+    cooldowns to your abilities (found in hero.cooldowns)
+    status effects (found in fight.statuses)
+
