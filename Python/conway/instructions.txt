@@ -1,0 +1,23 @@
+in this task you will implement conways "game of life" using a
+Grid object that has pre-built methods for printing the matrix required
+the game of life is a grid-based simulation experiment that shows the
+progression of lifeforms in an area. the game has no interaction from any
+player and is simply run in a loop on the computer where the next game-state
+depends only on the previous. so the same start always has the same outcome.
+
+in the game each "square" on the grid is called a cell, and has two states:
+    alive or dead
+there are also some rules that are applied simultaniously to every cell in
+the grid every loop (called a generation):
+    any live cell with fewer than two live neighbours dies
+    any cell with two or three live neighbours lives
+    any cell with more than three live neighbours dies
+    any dead cell with exactly three live neighbours becomes a live cell
+and thus the game-state of the next generation is determined.
+
+you will implement the function gollogic to run these rules on a 2-dimensional
+list. You can if you wish include stats tracking to display live/dead cell 
+count and more.
+
+it is recommended that you run solution.py without loking at the code to see what
+a final implementation might look like!

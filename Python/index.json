@@ -8,9 +8,14 @@
         "many_files2"
     ],
     "libraries":[
-        "many_files2"
+        "many_files2",
+        "boss_battle"
     ],
     "hashing":[
         "many_files2"
+    ],
+    "objects":[
+        "boss_battle"
     ]
+
 }
