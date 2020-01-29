@@ -1,0 +1,21 @@
+The villain from the python task boss_battle has returned
+but now has the power of bad code on his side! Implement a 
+spell for the hero to use to defeat the villain. Implement
+the cast function in the Fireball.cpp file to deal enough
+damage (without cheesing it) to defeat the horrible villain!
+
+After this is done you will be pretty familiar with the 
+Fireball and Character classes, implement a new spell:
+Holy_heal which heals a target so our poor hero can recover
+then you can implement whatever other kind of spell sounds fun.
+
+REMEMBER! by default a character can only remember one spell at
+a time! a new Character object needs to be created for every
+spell you want to try. The syntax is no different from a vector.
+
+NOTE ON CODE QUALITY! this would preferrably have been accomplished
+with a Spell object that Fireball and Holy_heal inherit, that way 
+Characters could cast any spell that inherits the Spell class.
+However the trade-off is that it would have made the basic task
+a bit harder to explain. If you want to, implement a Spell base
+class that Fireball and Holy_heal inherits from!
