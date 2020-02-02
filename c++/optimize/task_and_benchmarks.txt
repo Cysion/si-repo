@@ -1,0 +1,23 @@
+Your task is to copy the file basic.cpp and optimize the program to run faster!
+you cannot change what the program does, only how it does it. change too much
+and the control number will start to change. your approach should be as follows
+0. read this text file
+1. study the program and find the major bottlenecks
+2. sort the bottlenecks by approximate speedup potential
+3. fix bottlenecks starting at the most potential speedup to the least
+4. compile with "g++ -O0" to remove compiler optimizations
+
+remember to use everything you have learned about pointers, memory assignment and 
+such. you are allowed to use any tool or method to speed up the program. you may
+work in teams or individually. you MAY NOT copy-paste code from the internet, that
+would be very unsporting of you.
+
+remember that you are optimizing not re-implementing! leave functions mostly alone.
+you MAY change the RETURN TYPE or PARAMETER of the function
+
+the included testing script will be used to time everyones submissions for the grand
+competition!
+
+
+the benchmarks for the starter programs are as follows:
+    ryzen 1700x workstation running linux 5.4 compiled with g++ 9.2.0: 1.1301s over 10 attempts

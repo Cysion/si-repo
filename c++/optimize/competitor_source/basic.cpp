@@ -16,7 +16,7 @@ bool is_coprime(unsigned long long num1, unsigned long long num2){
 
 bool is_prime(unsigned long long number){
     bool status = 1;
-    for(int i = 0; i<number; i++){
+    for(int i = 2; i<number; i++){
         if(number % i == 0){
             status = 0;
         }
@@ -25,6 +25,7 @@ bool is_prime(unsigned long long number){
 }
 
 auto gen_primes(int amount){
+    std::cout << "Is PRiNtIng SlOwIng DowN thIs ProcCeSs a Lot More ThAn ComPutAtioN?" << std::endl;
     std::vector<unsigned long long> returnable;
     returnable.push_back(1);
     returnable.push_back(2);
@@ -41,6 +42,7 @@ auto gen_primes(int amount){
 
 
 auto sum_all(std::vector<unsigned long long> iterable){
+    std::cout << "HoW LOnG DoEs OnE CoUt TaKe?" << std::endl;
     unsigned long long sum;
     for(auto prime: iterable){
         sum+=prime;
@@ -49,6 +51,7 @@ auto sum_all(std::vector<unsigned long long> iterable){
 }
 
 auto gen_randoms(unsigned long long seed, unsigned long long amount){
+    std::cout << "Is It EVeN PrEdiCtiBle?" << std::endl;
     std::srand(seed);
     std::vector<unsigned long long> randoms;
     for(int i = 0; i < amount; i++){
@@ -67,9 +70,9 @@ unsigned long long count_coprimes(std::vector<unsigned long long> iterable){
 }
 
 
-long double get_secret(unsigned long long coprimes, unsigned long long len){
+double get_secret(double_t coprimes, double_t len){
     long double secret, prob1, prob2;
-    prob1 = coprimes / len;
+    prob1 = coprimes / (len / 2.0);
     prob2 = 6 / prob1;
     secret = std::sqrt(prob2);
     return secret;
@@ -84,14 +87,14 @@ void print_to_file(long double output){
 
 
 int main(){
-    //generate list of first 100000 prime numbers using function gen-primes, its return type needs to be iterable.
-    auto prime_list = gen_primes(100000);
+    //generate list of first 1000 prime numbers using function gen-primes, its return type needs to be iterable.
+    auto prime_list = gen_primes(1000);
 
     //sum all the elements of the prime list;
     auto prime_sum = sum_all(prime_list);
 
     //use sum as seed to generate a new list of random numbers
-    auto randoms = gen_randoms(prime_sum, 1000000);
+    auto randoms = gen_randoms(prime_sum, 10000000);
 
     //find the amount coprime/cofactor from the list of random numbers
     auto amount_coprime = count_coprimes(randoms);
@@ -100,4 +103,5 @@ int main(){
     auto secret_number = get_secret(amount_coprime, randoms.size());
 
     //send secret number to file
+    print_to_file(secret_number);
 }
