@@ -21,3 +21,4 @@ competition!
 
 the benchmarks for the starter programs are as follows:
     ryzen 1700x workstation running linux 5.4 compiled with g++ 9.2.0: 1.1301s over 10 attempts
+    core 15 7200U laptop running linux 5.3 compiled with g++ 9.2.1: 2.231s over 10 attempts
